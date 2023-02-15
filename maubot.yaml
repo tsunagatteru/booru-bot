@@ -1,0 +1,10 @@
+maubot: 0.3.1
+id: ru.tsuanagatte.booru_bot
+version: 1.0.0
+license: Custom
+modules:
+  - boorubot
+main_class: BooruBot
+config: true
+extra_files:
+  - base-config.yaml

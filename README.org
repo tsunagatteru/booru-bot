@@ -1,0 +1,37 @@
+#+STARTUP: overview
+#+TITLE: booru-bot
+#+LANGUAGE: en
+#+OPTIONS: num:nil
+
+[[https://github.com/maubot/maubot][Maubot]] plugin to fetch random posts from Safebooru.
+* Dependencies
+** Pip
+- maubot
+- mautrix
+- pymongo
+- aiohttp
+** MongoDB
+* Installaion
+- Clone repository
+- Run build.sh
+- Install mbp file via maubot web interface
+- Enter MongoDB credentials in config section
+* Usage
+** !get
+Fetches and sends x amount of pitures that matces  specified tags
+Examples:
+- Fetch 3 random pictures
+  #+BEGIN_SRC
+  !g !3 
+  #+END_SRC
+- Fetch 1 picture that match two tags
+  #+BEGIN_SRC
+  !g tag_numer_one+tag_number_two
+  #+END_SRC
+- Fetch 5 pictures that match last prompted tags
+  #+BEGIN_SRC
+  !g -!5
+  #+END_SRC
+
+** !tags
+Toggles sending tags of messages on/off
